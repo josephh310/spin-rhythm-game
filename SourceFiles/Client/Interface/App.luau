@@ -1,15 +1,14 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
 local Vide = require(ReplicatedStorage.Packages.Vide)
-local App = {
-	Unmount = nil :: () -> ()?
-}
-
 local Create = Vide.create
 local Mount = Vide.mount
 local Player = Players.LocalPlayer
 local PlayerGui = Player:WaitForChild("PlayerGui")
+
+local App = {
+	Unmount = nil :: () -> ()?
+}
 
 function App.Render()
 	return Create "ScreenGui" {
