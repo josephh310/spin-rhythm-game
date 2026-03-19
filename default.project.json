@@ -1,0 +1,24 @@
+{
+  "name": "Spin Rhythm",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "SourceFiles/Shared"
+      },
+      "Packages": {
+        "$path": "roblox_packages"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "SourceFiles/Server"
+      }
+    },
+    "ReplicatedFirst": {
+      "Client": {
+        "$path": "SourceFiles/Client"
+      }
+    }
+  }
+}
