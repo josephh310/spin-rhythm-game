@@ -1,5 +1,6 @@
 local ReplicatedFirst = game:GetService("ReplicatedFirst")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Selection = require(script.Parent.Selection)
 local Stylesheet = require(ReplicatedFirst.Client.Interface.Stylesheet)
 local Vide = require(ReplicatedStorage.Packages.Vide)
 
@@ -63,6 +64,10 @@ return function(Props: {
             },
             -- ...
             Props.Children
+        },
+
+        Selection {
+            Hovered = HoveredState,
         },
     }
 end
